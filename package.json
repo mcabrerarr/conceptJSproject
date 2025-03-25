@@ -8,7 +8,8 @@
         "codeceptjs:ui": "codecept-ui --app",
         "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
         "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
-        "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples"
+        "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples",
+        "test:fisrt": "npx codeceptjs run --features features/basic.feature --config=codecept.conf.ts --steps --debug"
     },
     "devDependencies": {
         "@codeceptjs/configure": "^1.0.3",
@@ -20,5 +21,8 @@
         "ts-node": "^10.9.2",
         "typescript": "^5.8.2",
         "webdriverio": "^6.12.1"
+    },
+    "dependencies": {
+        "mongodb": "^6.15.0"
     }
 }

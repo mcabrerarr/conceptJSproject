@@ -7,7 +7,7 @@ Given('I have a defined step', () => {
     // TODO: replace with your own step
     //I.amOnPage('/');
     I.wait(5);
-    I.
+    I.amOnPage("/");
 });
 When(/^I do something$/, async function () {
 
